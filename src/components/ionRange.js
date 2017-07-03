@@ -12,7 +12,7 @@ var IonRange = React.createClass({
     max: React.PropTypes.number
   },
   contextTypes: {
-    ionSnapper: React.PropTypes.object
+    ionGetSnapper: React.PropTypes.func
   },
   getInitialState(){
     return {
@@ -39,10 +39,10 @@ var IonRange = React.createClass({
     });
   },
   disableSnap(){
-    this.context.ionSnapper.disable();
+    this.context.ionGetSnapper().disable();
   },
   enableSnap(){
-    this.context.ionSnapper.enable();
+    this.context.ionGetSnapper().enable();
   },
   render() {
     var classes = classnames(
