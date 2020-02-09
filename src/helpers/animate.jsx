@@ -1,7 +1,5 @@
 import React from 'react';
-import createReactClass from 'create-react-class';
-
-import { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import StaticContainer from 'react-static-container';
 
