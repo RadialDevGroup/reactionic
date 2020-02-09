@@ -1,10 +1,11 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import IonTitle from './ionTitle';
 import { LeftButtonContainer } from '../helpers/containers';
 
-var IonHeaderBar = React.createClass({
+var IonHeaderBar = createReactClass({
   propTypes: {
     customClasses: PropTypes.string,
     title: PropTypes.oneOfType([

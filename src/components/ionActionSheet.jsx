@@ -1,10 +1,11 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import _ from 'lodash';
 import transitionend from 'transitionend-property';
 
-var IonActionSheet = React.createClass({
+var IonActionSheet = createReactClass({
   contextTypes: {
     ionActionSheet: PropTypes.object,
     ionUpdateActionSheet: PropTypes.func

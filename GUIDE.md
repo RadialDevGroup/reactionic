@@ -12,6 +12,7 @@ A very basic example will look like this:
 
     import ReactDOM from 'react-dom';
     import React from 'react';
+    import createReactClass from 'create-react-class';
     import PropTypes from 'prop-types';
     import { Router, Route, IndexRoute } from "react-router";
     import createBrowserHistory from 'history/lib/createBrowserHistory';
@@ -351,7 +352,7 @@ The Modal is a content pane that can go over the user’s main view temporarily.
 **How to use**
 
     // Define what is in the modal first (the modal contents etc.)
-    var DemoModal = React.createClass({
+    var DemoModal = createReactClass({
     render() {
       return (
           <IonModal {...this.props}

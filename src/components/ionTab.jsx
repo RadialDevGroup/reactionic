@@ -1,9 +1,10 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Link } from "react-router";
 
-var IonTab = React.createClass({
+var IonTab = createReactClass({
   propTypes: {
     customClasses: PropTypes.string,
     active: PropTypes.bool,

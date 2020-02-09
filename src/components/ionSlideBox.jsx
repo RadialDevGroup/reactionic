@@ -1,8 +1,9 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 
 import ReactSlick from 'react-slick';
 
-var IonSlideBox = React.createClass({
+var IonSlideBox = createReactClass({
   render() {
     var settings = {
       className: 'ion-slide-box',

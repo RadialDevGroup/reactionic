@@ -1,8 +1,9 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-var IonSideMenu = React.createClass({
+var IonSideMenu = createReactClass({
     propTypes: {
       side: PropTypes.string,
       customClasses: PropTypes.string

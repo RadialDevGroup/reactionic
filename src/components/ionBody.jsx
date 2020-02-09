@@ -1,4 +1,5 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import {IonModalContainer} from './ionModal';
@@ -10,7 +11,7 @@ import IonLoading from './ionLoading';
 import IonKeyboard from '../helpers/keyboard';
 import _ from 'lodash';
 
-var IonBody = React.createClass({
+var IonBody = createReactClass({
   propTypes: {
     platform: PropTypes.object,
     location: PropTypes.object.isRequired

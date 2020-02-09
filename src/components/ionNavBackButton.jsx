@@ -1,9 +1,10 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import IonButton from './ionButton';
 
-var IonNavBackButton = React.createClass({
+var IonNavBackButton = createReactClass({
   propTypes: {
     customClasses: PropTypes.string
   },

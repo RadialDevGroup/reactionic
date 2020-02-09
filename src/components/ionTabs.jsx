@@ -1,8 +1,9 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-var IonTabs = React.createClass({
+var IonTabs = createReactClass({
   propTypes: {
     customClasses: PropTypes.string,
     tabsTop: PropTypes.bool

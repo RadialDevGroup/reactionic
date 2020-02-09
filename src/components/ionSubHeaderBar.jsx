@@ -1,8 +1,9 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-var IonSubHeaderBar = React.createClass({
+var IonSubHeaderBar = createReactClass({
   propTypes: {
     customClasses: PropTypes.string
   },

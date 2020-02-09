@@ -1,9 +1,10 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
-var IonModalContainer = React.createClass({
+var IonModalContainer = createReactClass({
   // this component need to be attached to the DOM before the Modal enters
   // otherwise the transaitions won't work
   propTypes: {
@@ -30,7 +31,7 @@ var IonModalContainer = React.createClass({
 });
 
 
-var IonModal = React.createClass({
+var IonModal = createReactClass({
   propTypes: {
     customClasses: PropTypes.string,
     customTemplate: PropTypes.bool,

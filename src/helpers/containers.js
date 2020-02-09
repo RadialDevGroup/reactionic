@@ -1,9 +1,10 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import SetTimeoutMixin from './timeout.js';
 
-var LeftButtonContainer = React.createClass({
+var LeftButtonContainer = createReactClass({
   propTypes: {
     setMarginCompensation: PropTypes.func.isRequired
   },

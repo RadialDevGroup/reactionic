@@ -84,7 +84,7 @@
 
 - Add gitter.im chat room and badge [\#26](https://github.com/reactionic/reactionic/issues/26)
 - Some native issue and suggest change meteoric to meteoric124 fork for prevent buggy version [\#25](https://github.com/reactionic/reactionic/issues/25)
-- Does it make sense to upgrade to use `extends React.Component` from `React.createClass` [\#18](https://github.com/reactionic/reactionic/issues/18)
+- Does it make sense to upgrade to use `extends React.Component` from `createReactClass` [\#18](https://github.com/reactionic/reactionic/issues/18)
 - Use React context instead of props passing [\#13](https://github.com/reactionic/reactionic/issues/13)
 - What version of Ionic is this based upon? [\#1](https://github.com/reactionic/reactionic/issues/1)
 

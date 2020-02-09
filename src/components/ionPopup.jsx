@@ -1,10 +1,11 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import _ from 'lodash';
 import SetTimeoutMixin from '../helpers/timeout';
 
-var IonPopup = React.createClass({
+var IonPopup = createReactClass({
   propTypes: {
   },
   getInitialState: function() {

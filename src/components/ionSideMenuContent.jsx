@@ -1,6 +1,7 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 
-var IonSideMenuContent = React.createClass({
+var IonSideMenuContent = createReactClass({
   render() {
     return (
       <div className="menu-content snap-content pane" id="IonSideMenuContent">

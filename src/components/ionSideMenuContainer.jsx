@@ -1,8 +1,9 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import Snap from 'snapjs';
 
-var IonSideMenuContainer = React.createClass({
+var IonSideMenuContainer = createReactClass({
   contextTypes: {
     ionSetSnapper: PropTypes.func
   },

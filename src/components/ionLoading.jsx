@@ -1,10 +1,11 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import IonSpinner from './ionSpinner';
 import SetTimeoutMixin from '../helpers/timeout';
 
-var IonLoading = React.createClass({
+var IonLoading = createReactClass({
   propTypes: {
     // TODO: proptype checking for show if not false
     show: PropTypes.oneOfType([

@@ -1,4 +1,5 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import IonButton from './ionButton';
@@ -6,7 +7,7 @@ import _ from 'lodash';
 
 const POPOVER_BODY_PADDING = 6;
 
-var IonPopover = React.createClass({
+var IonPopover = createReactClass({
   propTypes: {
   },
   getDefaultProps: function() {
@@ -110,7 +111,7 @@ var IonPopover = React.createClass({
   }
 });
 
-var IonPopoverButton =  React.createClass({
+var IonPopoverButton =  createReactClass({
   render() {
     return (
       <IonButton customClasses="ionPopoverButton" {...this.props} />

@@ -1,9 +1,10 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
 
-var IonSpinner = React.createClass({
+var IonSpinner = createReactClass({
   propTypes: {
     customClasses: PropTypes.string,
     icon: PropTypes.string

@@ -1,9 +1,10 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import RouteCSSTransitionGroup from '../helpers/animate';
 
-var IonNavView = React.createClass({
+var IonNavView = createReactClass({
   propTypes: {
     customClasses: PropTypes.string
   },

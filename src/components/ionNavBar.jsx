@@ -1,11 +1,12 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import IonTitle from './ionTitle';
 import RouteCSSTransitionGroup from '../helpers/animate';
 import { LeftButtonContainer } from '../helpers/containers';
 
-var IonNavBar = React.createClass({
+var IonNavBar = createReactClass({
   propTypes: {
     customClasses: PropTypes.string,
     title: PropTypes.oneOfType([

@@ -1,8 +1,9 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-var IonListButton = React.createClass({
+var IonListButton = createReactClass({
   propTypes: {
     customClasses: PropTypes.string,
     action: PropTypes.string,
