@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import IonSpinner from './ionSpinner';
 import SetTimeoutMixin from '../helpers/timeout';
 
@@ -61,9 +61,9 @@ var IonLoading = React.createClass({
       if(nextOptions.duration > 0) {
         this.setTimeout(() => this.context.ionShowLoading(false), nextOptions.duration);
       }
-    }        
-  },  
-  render() {    
+    }
+  },
+  render() {
     var loading;
     if (this.props.show !== false && !this.state.wait) {
       var options = this.getOptions(this.props);

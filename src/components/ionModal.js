@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 var IonModalContainer = React.createClass({
   // this component need to be attached to the DOM before the Modal enters
