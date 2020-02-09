@@ -37,10 +37,6 @@ var IonPopup = createReactClass({
     }
   },
   componentDidUpdate: function(prevProps, prevState) {
-    if (_.isEmpty(prevContext.ionPopup) && !_.isEmpty(this.context.ionPopup)) {
-      // show popup
-      this.setState({ isUp: true });
-    }
     if (this.state.isUp && !prevState.closing && this.state.closing) {
       var self = this;
       var handler =  function() {
