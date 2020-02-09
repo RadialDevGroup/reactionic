@@ -12,6 +12,7 @@ A very basic example will look like this:
 
     import ReactDOM from 'react-dom';
     import React from 'react';
+    import PropTypes from 'prop-types';
     import { Router, Route, IndexRoute } from "react-router";
     import createBrowserHistory from 'history/lib/createBrowserHistory';
     import App from './components/app.jsx';
@@ -122,7 +123,7 @@ About most of them you don't need to bother, but they are all accessible like "p
 For example, to read the state of `ionKeyboardHeight` in your component add this:
 
     contextTypes: {
-      ionKeyboardHeight: React.PropTypes.number
+      ionKeyboardHeight: PropTypes.number
     },
 
 and read it like: 
@@ -148,7 +149,7 @@ The full list of global methods is:
 These methods are also accessible though context like:
 
     contextTypes: {
-      ionShowBackdrop: React.PropTypes.func
+      ionShowBackdrop: PropTypes.func
     },
 
 and call it like:
@@ -198,7 +199,7 @@ First define the actionSheet object, e.g.:
 Then, to activate the actionSheet, simply call the ionUpdateActionSheet method:
 
     contextTypes: {
-      ionUpdateActionSheet: React.PropTypes.func
+      ionUpdateActionSheet: PropTypes.func
     },
     
 and

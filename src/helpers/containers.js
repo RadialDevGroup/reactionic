@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import SetTimeoutMixin from './timeout.js';
 
 var LeftButtonContainer = React.createClass({
   propTypes: {
-    setMarginCompensation: React.PropTypes.func.isRequired
+    setMarginCompensation: PropTypes.func.isRequired
   },
   mixins: [SetTimeoutMixin],
   componentDidMount: function() {
