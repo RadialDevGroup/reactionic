@@ -30,7 +30,13 @@ var IonPopup = createReactClass({
     }
   },
   mixins: [SetTimeoutMixin],
-  componentDidUpdate: function(prevProps, prevState, prevContext) {
+  componentWillUpdate: function(nextProps, nextState, nextContext) {
+    if (!_.isEmpty(nextContext.ionPopup) && _.isEmpty(this.context.ionPopup)) {
+      // show popup
+      this.setState({ isUp: true });
+    }
+  },
+  componentDidUpdate: function(prevProps, prevState) {
     if (_.isEmpty(prevContext.ionPopup) && !_.isEmpty(this.context.ionPopup)) {
       // show popup
       this.setState({ isUp: true });
