@@ -2,7 +2,7 @@
   "name": "reactionic",
   "version": "1.2.1-Taxel",
   "description": "React Ionic Library. Use Ionic to build hybrid mobile apps with React. No Angular needed.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rm -rf dist && mkdir dist && mkdir dist/scss",
