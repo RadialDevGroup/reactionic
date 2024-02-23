@@ -46,6 +46,11 @@ var IonItemToggle = (0, _createReactClass2.default)({
       checked: this.props.checked
     };
   },
+  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+    if (nextProps.checked !== this.props.checked) {
+      this.setState({ checked: nextProps.checked });
+    }
+  },
   handleChange: function handleChange(event) {
     var toggle = this.state.checked ? false : true;
     if (this.props.handleChange) this.props.handleChange(toggle);
