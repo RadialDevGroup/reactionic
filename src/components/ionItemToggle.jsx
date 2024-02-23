@@ -25,6 +25,11 @@ var IonItemToggle = createReactClass({
       checked: this.props.checked
     };
   },
+  componentWillReceiveProps: function(nextProps) {
+    if (nextProps.checked !== this.props.checked) {
+      this.setState({checked: nextProps.checked});
+    }
+  },
   handleChange: function (event) {
     var toggle = this.state.checked ? false : true;
     if (this.props.handleChange)
@@ -40,14 +45,14 @@ var IonItemToggle = createReactClass({
       this.props.customClasses
     );
     return (
-      <div className='item item-toggle'>
+      <div className="item item-toggle">
         {this.props.label}
-	<label className={classes}>
-	  <input type="checkbox" checked={this.state.checked} onChange={this.handleChange} />
-          <div className='track'>
-	    <div className='handle'></div>
-	  </div>
-	</label>
+      	<label className={classes}>
+      	  <input type="checkbox" checked={this.state.checked} onChange={this.handleChange} />
+          <div className="track">
+      	    <div className="handle"/>
+      	  </div>
+      	</label>
       </div>
     );
   }
